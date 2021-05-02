@@ -3,3 +3,12 @@
 h1 {
     font-family: 'Montserrat', sans-serif;
 }
+
+#header {
+    width: 30%;
+}
+
+#title {
+    float: right;
+    margin-top: 62px;
+}
