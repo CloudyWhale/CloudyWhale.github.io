@@ -22,3 +22,7 @@ h1 {
     animation-duration: 2s;
 }
 
+html {
+    margin: 0;
+}
+
