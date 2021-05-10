@@ -33,9 +33,9 @@ h1, h2 {
 }
 
 @keyframes title_start {
-    0% {opacity: 0%; margin-top: 150px;}
-    25% {opacity: 0%; margin-top: 150px;}
-    100% {opacity: 100%; margin-top: 62px;}
+    0% {opacity: 0%; top: 150px;}
+    25% {opacity: 0%; top: 150px;}
+    100% {opacity: 100%; top: 45px;}
 }
 
 @keyframes not_hovering {
@@ -53,8 +53,10 @@ h1, h2 {
 }
 
 #title {
+    position:relative;
+    z-index: -1;
     float: right;
-    margin-top: 62px;
+    top: 45px;
     animation-name: title_start;
     animation-duration: 2s;
 }
