@@ -4,12 +4,14 @@ head {
 
 body {
     margin: 0;
+    background-color:white;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 h1, h2 {
     font-family: 'Montserrat', sans-serif;
+    color:black;
 }
 
 #topnav {
