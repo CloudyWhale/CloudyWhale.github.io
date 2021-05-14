@@ -2,7 +2,7 @@ head {
     margin: 0;
 }
 
-body {
+#body {
     margin: 0;
     background-color:white;
 }
@@ -16,22 +16,28 @@ h1, h2 {
 
 #topnav {
     margin: 0px;
+    margin-top: -25px;
     height: 50px;
     width: 100%;
+    background-color: white;
+    filter: drop-shadow(0 0px 25px rgb(0, 0, 0));
+}
+#header {
+    width: 550px;
+    margin-top: 100px;
+    height: 50px;
 }
 
 #Rok {
+    position: relative;
+    top: 12.5px;
     margin-left: calc(100% - 100px);
     font-size: 150%;
-    color: grey;
-    animation-name: not_hovering;
-    animation-duration: 1s;
+    color: #dddddd;
 }
 
 #Rok:hover {
     cursor: pointer;
-    animation-name: hovering;
-    animation-duration: 1s;
 }
 
 @keyframes title_start {
@@ -40,19 +46,6 @@ h1, h2 {
     100% {opacity: 100%; top: 45px;}
 }
 
-@keyframes not_hovering {
-    0%{color:black;}
-        100% {color:grey;}
-    }
-
-@keyframes hovering {
-    0%{color:grey;}
-    100%{color: black;}
-}
-#header {
-    width: 550px;
-    margin-top: 100px;
-}
 #logo {
     float: left;
 }
@@ -66,6 +59,14 @@ h1, h2 {
     animation-duration: 2s;
 }
 
-.fas fa-moon {
-    width: 100px;
+#mode {
+    width: 25px;
+    position: relative;
+    bottom: 35px;
+    left: 10px;
+    filter: invert(0);
+}
+
+#mode:hover{
+    cursor:pointer;
 }
