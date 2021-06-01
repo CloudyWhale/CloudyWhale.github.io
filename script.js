@@ -1,5 +1,5 @@
 var darkmode = window.localStorage.getItem('darkmode');
-setTimeout(() => {  applymode(); }, 1);
+setTimeout(() => {  applymode(); }, 0.001);
 console.log(localStorage);
 
 function ToggleDarkMode() {
