@@ -4,7 +4,7 @@ function CAVEMAN() {
 }
 
 function ToggleDarkMode() {
-  if (darkmode == false) {
+  if (darkmode == 'false') {
     darkmode = 'true';
   } else {
     darkmode = 'false';
