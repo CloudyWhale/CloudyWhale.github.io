@@ -5,6 +5,7 @@ head {
 #body {
     margin: 0;
     background-color:white;
+    width: 100%;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
@@ -15,9 +16,10 @@ h1, h2 {
 }
 
 #topnav {
+    z-index: -1;
     margin: 0px;
     margin-top: -25px;
-    height: 50px;
+    height: 80px;
     width: 100%;
     background-color: white;
     filter: drop-shadow(0 0px 25px rgb(0, 0, 0));
@@ -40,19 +42,17 @@ h1, h2 {
 
 #title {
     position:relative;
-    z-index: -1;
+    z-index: -2;
     float: right;
     top: 45px;
     animation-name: title_start;
     animation-duration: 2s;
 }
 
-#mode {
-    width: 25px;
+#mode{
     position: relative;
-    bottom: 35px;
-    left: 10px;
-    filter: invert(0);
+    top: 35px;
+    left: 8.75px;
 }
 
 #mode:hover{
@@ -65,6 +65,15 @@ h1, h2 {
   }
 
   #Rok {
-     opacity: 0;
+      color: white;
+      position: absolute;
+      left: calc(100% - 150px);
+      top: 37.5px;
+      margin: 0;
+     opacity: 100;
      cursor: default;
+  }
+
+  #Rok:hover {
+      cursor: pointer;
   }

@@ -15,10 +15,11 @@ function applymode(){
   if (darkmode == 'true') {
     window.localStorage.setItem('darkmode', 'true');
     console.log(localStorage);
-    document.getElementById("title").style.color = "#ffffff";
+    document.getElementById("title").style.color = "white";
     document.getElementById("mode").style.filter = "invert(1)";
     document.getElementById("topnav").style.backgroundColor = "#1e1e1e";
     document.getElementById("body").style.backgroundColor = "#1e1e1e";
+    document.getElementById("Rok").style.color = "white";
   } else {
     window.localStorage.setItem('darkmode', 'false');
     console.log(localStorage);
@@ -26,5 +27,6 @@ function applymode(){
     document.getElementById("mode").style.filter = "invert(0)";
     document.getElementById("topnav").style.backgroundColor = "white";
     document.getElementById("body").style.backgroundColor = "white";
+    document.getElementById("Rok").style.color = "black";
   }
 }
