@@ -78,3 +78,13 @@ h1, h2 {
   #Rok:hover {
       cursor: pointer;
   }
+
+  #home {
+      position: absolute;
+      height: 45px;
+      top: 30px;
+  }
+
+  #home:hover {
+    cursor: pointer;
+  }
