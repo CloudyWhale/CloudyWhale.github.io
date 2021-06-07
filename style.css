@@ -69,6 +69,7 @@ h1, h2 {
       position: absolute;
       left: calc(100% - 175px);
       top: 37.5px;
+      font-size: 25px;
       margin: 0;
      opacity: 100;
      cursor: default;
