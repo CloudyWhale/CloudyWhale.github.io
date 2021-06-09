@@ -80,6 +80,7 @@ h1, h2 {
   }
 
   #home {
+      filter: invert(0);
       position: absolute;
       height: 45px;
       top: 30px;

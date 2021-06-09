@@ -21,6 +21,7 @@ function applymode(){
     document.getElementById("topnav").style.backgroundColor = "#1e1e1e";
     document.getElementById("body").style.backgroundColor = "#1e1e1e";
     document.getElementById("Rok").style.color = "white";
+    document.getElementById("home").style.filter = "invert(1)";
   } else {
     console.log(localStorage);
     document.getElementById("title").style.color = "black";
@@ -28,6 +29,7 @@ function applymode(){
     document.getElementById("topnav").style.backgroundColor = "white";
     document.getElementById("body").style.backgroundColor = "white";
     document.getElementById("Rok").style.color = "black";
+    document.getElementById("home").style.filter = "invert(0)";
   }
 }
 
