@@ -1,20 +1,28 @@
-var darkmode = window.localStorage.getItem('darkmode');
-setTimeout(() => {  applymode(); }, 0.001);
+var darkmode = window.localStorage.getItem("darkmode");
+setTimeout(() => {
+  applymode();
+}, 0.001);
 console.log(localStorage);
+console.log(window.screen.availWidth);
 
 function ToggleDarkMode() {
-  if (darkmode == 'false') {
-    darkmode = 'true';
-    window.localStorage.setItem('darkmode', 'true');
+  if (darkmode == "false") {
+    darkmode = "true";
+    window.localStorage.setItem("darkmode", "true");
   } else {
-    darkmode = 'false';
-    window.localStorage.setItem('darkmode', 'false');
+    darkmode = "false";
+    window.localStorage.setItem("darkmode", "false");
   }
   applymode();
 }
 
-function applymode(){
-  if (darkmode == 'true') {
+function applymode() {
+  if (window.screen.availWidth == 1920) {
+    document.getElementById("header").style.width = "30%";
+  } else if (window.screen.availWidth == 1280) {
+    document.getElementById("header").style.width = "45%";
+  }
+  if (darkmode == "true") {
     console.log(localStorage);
     document.getElementById("title").style.color = "white";
     document.getElementById("mode").style.filter = "invert(1)";
@@ -33,6 +41,6 @@ function applymode(){
   }
 }
 
-function Portfolio(){
-  window.location.href="/Portfolio/"
+function Portfolio() {
+  window.location.href = "/Portfolio/";
 }
