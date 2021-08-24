@@ -4,6 +4,17 @@ setTimeout(() => {
 }, 0.001);
 console.log(localStorage);
 
+function ToggleDarkMode() {
+  if (darkmode == "false") {
+    darkmode = "true";
+    window.localStorage.setItem("darkmode", "true");
+  } else {
+    darkmode = "false";
+    window.localStorage.setItem("darkmode", "false");
+  }
+  applymode();
+}
+
 function applymode() {
   if (darkmode == "true") {
     console.log(localStorage);
