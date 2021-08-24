@@ -65,7 +65,7 @@ h1, h2 {
   }
 
   #Rok {
-      color: white;
+      color: black;
       position: absolute;
       left: calc(100% - 175px);
       top: 37.5px;

@@ -38,9 +38,22 @@ h1, h2 {
    cursor: default;
 }
 
+#Rok:hover {
+    cursor: pointer;
+}
+
 #home {
     filter: invert(0);
     position: absolute;
     height: 45px;
     top: 30px;
+}
+
+#home:hover {
+    cursor: pointer;
+}
+
+#nothing {
+    color: black;
+    margin-top: 400px;
 }
