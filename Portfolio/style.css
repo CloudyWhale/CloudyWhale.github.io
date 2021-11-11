@@ -59,10 +59,14 @@ h1, h2 {
 
 #nothing {
     color: black;
-    margin-top: 15%;
 }
 
 center{
   position: relative;
-  top: 100px;
+  top: 75px;
+}
+
+#car{
+  width: 75vh;
+  border-radius: 25px;
 }
