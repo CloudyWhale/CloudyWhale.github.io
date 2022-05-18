@@ -33,7 +33,7 @@ h1, h2 {
 @keyframes title_start {
     0% {opacity: 0%; top: 150px;}
     25% {opacity: 0%; top: 150px;}
-    100% {opacity: 100%; top: 0px;}
+    100% {opacity: 100%; top: 15px;}
 }
 
 #logo {
@@ -42,6 +42,7 @@ h1, h2 {
 
 #title {
     position:relative;
+     top: 15px;
     z-index: -2;
     text-align: center;
     animation-name: title_start;
