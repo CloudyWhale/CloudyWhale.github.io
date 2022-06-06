@@ -41,9 +41,10 @@ h1, h2 {
 }
 
 #title {
+  z-index: 3;
     position:relative;
      top: 15px;
-    z-index: -2;
+    /*z-index: -2;*/
     text-align: center;
     animation-name: title_start;
     animation-duration: 2s;
